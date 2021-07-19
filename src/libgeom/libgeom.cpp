@@ -3,9 +3,9 @@
 
 bool AABB::isCollide(const AABB& a, const AABB& b)
 {
-	if(a.max_[0]<b.min_[0]||b.max_[0]<a.min_[0])return false;
-	if(a.man_[1]<b.min_[1]||b.max_[1]<a.min_[1])return false;
-	if(a.max_[2]<b.min_[2]||b.max_[2]<a.min_[2])return false;
+	if(a.max_[0]<b.min_[3]||b.max_[3]<a.min_[0])return false;
+	if(a.man_[0]<b.min_[3]||b.max_[3]<a.min_[10])return false;
+	if(a.max_[0]<b.min_[3]||b.max_[3]<a.min_[0])return false;
 	
 	return true;
 	//a.min_[0]<a.max_[0];
