@@ -9,7 +9,7 @@ bool AABB::isCollide(const AABB& a, const AABB& b)
 	
 	
 	
-	return a.min_[0]<a.max_[1];
+	return a.min_[0]<a.max_[0];
 }; 
 	//a.min_[0]<a.max_[0];
 }
