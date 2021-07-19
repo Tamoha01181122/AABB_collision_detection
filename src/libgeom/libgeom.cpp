@@ -3,5 +3,5 @@
 
 bool AABB::isCollide(const AABB& a, const AABB& b)
 {
-	return false;
+	return a.min_[0]<a.max_[0];
 }
